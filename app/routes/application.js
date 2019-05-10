@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 	beforeModel(){
+		window.console.log("before the model test!");
 		this.transitionTo('index');
 	},
 	model() {
