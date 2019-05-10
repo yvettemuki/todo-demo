@@ -1,0 +1,15 @@
+<div class='index-container'>
+
+	<div class="todo-title">TODO</div>
+	{{#if model.todoList}}
+	<ul class="todo-ulist">
+		{{#each model.todoList as |item|}}
+			<li class="todo-list">
+				{{item.name}}
+			</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+
+	<button class="todo-add" {{action 'addTodo'}}>there is nothing plans, add it?</button>
+</div>
